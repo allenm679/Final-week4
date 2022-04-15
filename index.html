@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="fortuneButton">Get a fortune</button>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      document.getElementById("fortuneButton").onclick = function () {
+        axios.get("http://localhost:4000/api/fortune/")
+        .then(function (response) {
+          const data = response.data;
+          alert(data);
+          
+        });
+      };
+      
+      
+      </script>
+ 
+ 
+
+ <button id='lifeAdvice'>Get advice</button>  
+
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script>
+
+   document.getElementById('lifeAdvice').onclick = function () {
+     axios.get('http://localhost:4000/api/fortune/')
+     .then(function (response) {
+       const data = response.data;
+       alert(data)
+      })
+    }
+    </script>
+    
+    
+ 
+<form>
+  <input
+  type="text"
+  id="title"
+  placeholder="What's that pokemon"/>
+
+  <input
+  type="text"
+  id="img"
+  placeholder="Paste an image URL"/>
+  
+
+  
+
+</form>
+
+
+
+</body>
+</html>
