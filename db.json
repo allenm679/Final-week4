@@ -2,7 +2,15 @@
     {
         "id": 1,
         "pokemon": "Charizard",
-        "Type" : "Fire",
-        "imageURL" : "https://sg.portal-pokemon.com/play/resources/pokedex/img/pm/0aa78a0061bda9d88cbb0bbf739cd9cc56522fe9.png"
+        "type" : "Fire",
+        "color": "Orange",
+        "size": "Large"
+    },
+    {
+        "id": 2,
+        "pokemon": "Pikachu",
+        "type": "Electric",
+        "color": "Yellow",
+        "size": "Small"
     }
 ]
