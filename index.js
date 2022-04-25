@@ -26,11 +26,12 @@ app.get("/api/fortune", (req, res) => {
 });
 
 
-const {pokemon, addPokemon, deletePokemon} = require('./controller')
+const pokemon = require('./controller')
 
-app.post('/api/fortune', pokemon)
-app.put
-app.delete
+app.get('/api/fortune', pokemon.getPokemon)
+app.post('/api/fortune', pokemon.addPokemon)
+app.put('/api/fortune/:id',pokemon.updatePokemon)
+app.delete('/api/fortune/:id', pokemon.deletePokemon)
 
 
 
